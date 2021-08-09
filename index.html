@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <div class="hover"></div>
+            <div class="pressed"></div>
+            <div class="disabled"></div>
+        </div>
+        <form method="GET" action="https://ampli-html-forms.herokuapp.com/data">
+            <input type="hidden" name="author" value="danylo zadorozhnii">
+            <fieldset>
+                <h1>Registration</h1>
+                <div class="name">
+                    <label class="namelbl" for="input_name" >
+                        Name 
+                    </label>       
+                    <input name="name" type="text" id="input_name" placeholder="Enter your name">
+                    
+                </div>
+                <div class="email">
+                    <label class="emaillbl" for="input_email">
+                        Email
+                    </label>       
+                    <input name="email" type="text" id="input_email" placeholder="Enter your email">
+                    
+                </div>
+                <div class="password">
+                    <label class="passwordlbl" for="input_password">
+                        Password
+                    </label>       
+                    <input name="password" type="password" id="input_password" placeholder="Enter your password">
+                    
+                </div>
+                <div class="password_repeat">
+                    <label class="password_repeatlbl" for="input_password_repeat">
+                        Confirm password
+                    </label>       
+                    <input name="password_repeat" type="password" id="input_password_repeat" placeholder="Confirm your password">
+                    
+                </div>
+                 
+              
+                
+                <div class="gender">
+                    <div class="male">
+                        <label class="male_lbl" for="male_rb">
+                            Male
+                        </label>
+                        <input type="radio" name="gender" id="male_rb">
+                    </div>
+                    <div class="female">
+                        <label class="female_lbl" for="female_rb">
+                            Female
+                        </label>
+                        <input type="radio" name="gender" id="female_rb">
+                    </div>
+                </div>
+                <div class="biography">
+                    <label class="biography_lbl" for="biography_txt">
+                        Your biography
+                    </label>
+                    <textarea placeholder="Enter your text" name="biography" id="biography_txt"></textarea>
+                </div>   
+               <div class="checkboxes">
+                    <label>
+                        <input name="terms" type="checkbox">
+                        I agree with Terms and Conditions
+                    </label>  
+                    <label>
+                        <input name="subscription" type="checkbox">
+                        Subscribe to our newsletter
+                    </label>  
+                 </div>
+                 <div class="buttons">
+                    <input id="submit" type="submit" value="SUBMIT">
+                    <input id="reset" type="reset" value="RESET">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
